@@ -1,0 +1,73 @@
+/*
+This is a UI file (.ui.qml) that is intended to be edited in Qt Design Studio only.
+It is supposed to be strictly declarative and only uses a subset of QML. If you edit
+this file manually, you might introduce QML code that is not supported by Qt Design Studio.
+Check out https://doc.qt.io/qtcreator/creator-quick-ui-forms.html for details on .ui.qml files.
+*/
+
+import QtQuick 6.7
+import QtQuick.Controls 6.7
+import ScheduleAppDesign
+
+Rectangle {
+    width: Constants.width
+    height: Constants.height
+    color: "#083938"
+
+    
+    Text {
+        width: 266
+        height: 138
+        text: "Goals"
+        font.pixelSize: 100
+        anchors.centerIn: parent
+        font.family: Constants.largeFont.family
+        anchors.verticalCenterOffset: -996
+        anchors.horizontalCenterOffset: -5
+    }
+    
+    Text {
+        id: text1
+        x: 167
+        y: 389
+        width: 270
+        height: 116
+        text: qsTr("Daily Goals")
+        font.pixelSize: 50
+    }
+    
+    Text {
+        id: text2
+        x: 650
+        y: 395
+        width: 306
+        height: 103
+        color: "#ff0000"
+        text: qsTr("Weekly Goals")
+        font.pixelSize: 50
+        font.bold: false
+        font.underline: true
+    }
+    
+    Text {
+        id: text3
+        x: 131
+        y: 1079
+        width: 306
+        height: 103
+        color: "#cd5800"
+        text: qsTr("Monthly Goals")
+        font.pixelSize: 50
+    }
+    
+    Text {
+        id: text4
+        x: 650
+        y: 1084
+        width: 306
+        height: 103
+        color: "#5900f5"
+        text: qsTr("Ultamate goals")
+        font.pixelSize: 50
+    }
+}
